@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ScrollView
+        android:layout_above="@+id/ButtonsLayout"
+        android:layout_alignParentTop="true"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+            <LinearLayout
+                android:id="@+id/topLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:visibility="gone"
+                >
+                <Spinner
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:id="@+id/ToSpinner"
+                    android:layout_margin="3dp"
+                    android:padding="3dp"
+                    android:layout_gravity="center"
+                    />
+                <Button
+                    android:id="@+id/translateBtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Translate"
+                    />
+
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/textData"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="Capture Image or Choose from Photos to get text here"
+                android:textColor="@color/black"
+                android:textSize="20dp"
+                android:background="@android:color/transparent"
+                >
+
+            </EditText>
+        </LinearLayout>
+
+
+
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/ButtonsLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        >
+
+        <Button
+            android:id="@+id/BtnCapture"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:elevation="4dp"
+            android:layout_weight="1"
+            app:cornerRadius="15dp"
+            android:text="Capture"
+            android:textStyle="bold"
+            android:textSize="17dp"
+            android:drawableLeft="@drawable/camera_icon"
+            android:drawableTint="@color/white"
+            android:textAllCaps="false"
+
+            />
+
+        <Button
+            android:id="@+id/BtnCopy"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:text="Copy Text"
+            android:textStyle="bold"
+            android:textSize="17dp"
+            app:cornerRadius="15dp"
+            android:drawableLeft="@drawable/copy_icon"
+            android:drawableTint="@color/white"
+            android:textAllCaps="false"
+            android:visibility="gone"
+            />
+
+
+    </LinearLayout>
+
+</RelativeLayout>

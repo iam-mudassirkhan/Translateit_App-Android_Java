@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_offline">
+
+    <fragment
+        android:id="@+id/nav_offline"
+        android:name="com.example.translateitapp.ui.TranslatorFragment.TranslatorFragment"
+        android:label="@string/menu_Translator"
+        tools:layout="@layout/fragment_Translator" />
+
+    <fragment
+        android:id="@+id/nav_online"
+        android:name="com.example.translateitapp.ui.TextDetectorFragment.TextDetectorFragment"
+        android:label="@string/menu_getTextFromImage"
+        tools:layout="@layout/fragment_TextDetector" />
+
+    <fragment
+        android:id="@+id/nav_imgText"
+        android:name="com.example.translateitapp.ui.LiveCameraTranslator.LiveCameraTranslator_Fragment"
+        android:label="@string/menu_imageTranslator"
+        tools:layout="@layout/fragment_live_camera_translator" />
+<activity
+    android:id="@+id/nav_textDetectorActivity"
+    android:name="com.example.translateitapp.ui.TextDetectorActivity.TextdetectorActivity"
+    android:label="Text Detector"
+    tools:layout="@layout/activity_textdetector"
+    />
+   
+</navigation>

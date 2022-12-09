@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_offline"
+            android:icon="@drawable/translate"
+            android:title="@string/menu_Translator"
+            android:menuCategory="secondary"
+            />
+<!--        <item-->
+<!--            android:id="@+id/nav_online"-->
+<!--            android:icon="@drawable/text_recognition"-->
+<!--            android:title="@string/menu_getTextFromImage"-->
+<!--            android:menuCategory="secondary"/>-->
+<!--        <item-->
+<!--            android:id="@+id/nav_imgText"-->
+<!--            android:icon="@drawable/ic_baseline_image_24"-->
+<!--            android:title="@string/menu_imageTranslator"-->
+<!--            android:menuCategory="secondary"/>-->
+
+        <item
+            android:id="@+id/nav_textDetectorActivity"
+            android:icon="@drawable/text_detector"
+            android:title="Text Detector"
+            android:menuCategory="secondary"
+            />
+    </group>
+
+    <item android:title="Upcoming"
+        android:menuCategory="secondary"
+        >
+
+        <menu>
+
+            <item android:title="Speech Translator" />
+            <item android:title="Live Camera Translator"/>
+
+
+        </menu>
+
+    </item>
+
+</menu>
